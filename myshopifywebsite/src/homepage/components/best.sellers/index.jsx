@@ -15,13 +15,19 @@ import { Pagination } from "swiper";
 import axios from 'axios';
 import Rating from '../rating';
 
-const BestSellers = () => {
+const BestSellers = ({ addBasket, setAddBasket }) => {
   const [sellersData, setSellersData] = useState([])
   useEffect(() => {
     axios.get("http://localhost:8080/sellers")
     .then((response) => setSellersData(response.data))
   }, [])
-  console.log(sellersData);
+  const handleAddBasket = (obj) => {
+    if (!addBasket.find((el) => el.id === obj.id)) {
+      setAddBasket([...addBasket, obj]);
+    } else {
+      alert("This product is already added");
+    }
+  }
   return (
   <div className='seller'>
   <h1>Best Sellers</h1>
@@ -58,6 +64,7 @@ const BestSellers = () => {
         <span>€{seller.price}</span> 
         <Rating rating={seller.rating}/>
         </div> 
+        <button onClick={() => handleAddBasket(seller)}>Add To Cart</button>
         </div>
         </SwiperSlide>
           </>

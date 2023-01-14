@@ -81,7 +81,7 @@ let sellers = [
 ]
 let featured = [
     {
-        id: 1,
+        id: 9,
         brend: "SLS",
         name: "Solid pattern in fashion summer dress",
         price: "340.00",
@@ -90,7 +90,7 @@ let featured = [
         imgUrlTwo: "https://cdn.shopify.com/s/files/1/0568/7902/2234/products/product-1-3_220x220.jpg?v=1621906927",
     },
     {
-        id: 2,
+        id: 10,
         brend: "SLS",
         name: "Mackintosh Poket backpack",
         price: "180.00",
@@ -99,7 +99,7 @@ let featured = [
         imgUrlTwo: "https://cdn.shopify.com/s/files/1/0568/7902/2234/products/product-2-2_220x220.jpg?v=1621923967",
     },
     {
-        id: 3,
+        id: 11,
         brend: "Converse",
         name: "Converse blue training shoes",
         price: "30.00-50.00",
@@ -108,7 +108,7 @@ let featured = [
         imgUrlTwo: "https://cdn.shopify.com/s/files/1/0568/7902/2234/products/product-12-2_220x220.jpg?v=1621925141",
     },
     {
-        id: 4,
+        id: 12,
         brend: "Handmade",
         name: "Fashionable Overnight Bag",
         price: "30.00-50.00",
@@ -117,7 +117,7 @@ let featured = [
         imgUrlTwo: "https://cdn.shopify.com/s/files/1/0568/7902/2234/products/10-3_220x220.jpg?v=1621925983",
     },
     {
-        id: 5,
+        id: 13,
         brend: "The Northland",
         name: "Women Red Fur Overcoat",
         price: "184.00",
@@ -126,7 +126,7 @@ let featured = [
         imgUrlTwo: "https://cdn.shopify.com/s/files/1/0568/7902/2234/products/product-3-2-800x900_220x220.jpg?v=1624258539",
     },
     {
-        id: 6,
+        id: 14,
         brend: "The Northland",
         name: "Fashion Electric Wrist Watch",
         price: "184.00",
@@ -135,7 +135,7 @@ let featured = [
         imgUrlTwo: "https://cdn.shopify.com/s/files/1/0568/7902/2234/products/product-4-2-800x900_220x220.jpg?v=1624264410",
     },
     {
-        id: 7,
+        id: 15,
         brend: "Pauline Deltour",
         name: "Hand Electric Cell",
         price: "26.00",
@@ -144,7 +144,7 @@ let featured = [
         imgUrlTwo: "https://cdn.shopify.com/s/files/1/0568/7902/2234/products/product-5-2-800x900_220x220.jpg?v=1624325587",
     },
     {
-        id: 8,
+        id: 16,
         brend: "Pauline Deltour",
         name: "Converse Season Shoes",
         price: "135.62",

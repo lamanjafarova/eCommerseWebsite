@@ -10,7 +10,7 @@ import SectionBackground from '../components/section.background'
 import { SponsorLogo } from '../components/sponsor.logo'
 import "../home/index.scss"
 
-const HomePageMain = () => {
+const HomePageMain = ({ addBasket, setAddBasket }) => {
   return (
     <div>
         <MainHomeCarusel />
@@ -38,9 +38,9 @@ const HomePageMain = () => {
             </div>
         </div>
         <OurCategories />
-        <BestSellers />
+        <BestSellers addBasket={addBasket} setAddBasket={setAddBasket}/>
         <SectionInformation />
-        <OurFeatured />
+        <OurFeatured addBasket={addBasket} setAddBasket={setAddBasket}/>
         <SectionBackground />
         <FeaturedArticles />
         <SponsorLogo />
