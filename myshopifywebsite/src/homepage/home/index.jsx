@@ -44,7 +44,7 @@ const HomePageMain = () => {
         <SectionBackground />
         <FeaturedArticles />
         <SponsorLogo />
-        {/* <ProductsFooter /> */}
+        <ProductsFooter />
     </div>
   )
 }

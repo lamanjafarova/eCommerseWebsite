@@ -13,6 +13,7 @@ import { Pagination } from "swiper";
 // import Product7 from "../../../images/product_7.webp"
 // import Product8 from "../../../images/product_8.webp"
 import axios from 'axios';
+import Rating from '../rating';
 
 const BestSellers = () => {
   const [sellersData, setSellersData] = useState([])
@@ -55,6 +56,7 @@ const BestSellers = () => {
         <p>{seller.brend}</p>
         <h3>{seller.name}</h3>
         <span>€{seller.price}</span> 
+        <Rating rating={seller.rating}/>
         </div> 
         </div>
         </SwiperSlide>

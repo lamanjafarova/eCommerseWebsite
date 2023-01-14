@@ -1,13 +1,14 @@
 import React from 'react'
 import "../header/index.scss"
 import logoheader from  "../../images/logoheader.svg"
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
    <nav>
      <div className='header'>
       <div className="logo_header">
-        <img src={logoheader} alt="" />
+       <Link to={"/"}> <img src={logoheader} alt="" /></Link>
         </div> 
         <div className="header_input">
           <input className='search_input' type="text" placeholder='Search in...'/>
@@ -34,11 +35,6 @@ const Header = () => {
              <div><i className="fa-solid fa-bag-shopping"></i></div>
           </div>
         </div>
-
-
-
-
-
         </div>
    </nav>
 

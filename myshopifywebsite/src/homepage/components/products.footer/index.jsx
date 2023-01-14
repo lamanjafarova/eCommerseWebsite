@@ -1,17 +1,28 @@
-import React from 'react'
-import Product1 from "../../../images/product_1.webp"
-
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import Rating from '../rating'
+import "./index.scss"
 const ProductsFooter = () => {
+  const [productsData, setproductsData] = useState([])
+  useEffect(() => {
+    axios.get("http://localhost:8080/products")
+    .then((response) => setproductsData(response.data))
+  }, [])
   return (
     <div className='products-footer'>
-        <ul>Sale Products
-            <li>
-                <img src={Product1} alt="" />
-                <div className="text">
-                    <h4>Comfortable Brown Scarf</h4>
-                </div>
-            </li>
-        </ul>
+     <div className="sale-products">
+      <ul>
+        {productsData.map((element) => {
+          return <li><img src={element.imgUrlOne} alt="" />
+          <div className="text">
+            <p>{element.name}</p>
+            <p>{element.price}</p>
+            <p><Rating rating={element.rating} /></p>
+          </div>  
+          </li>
+        })}
+      </ul>
+     </div>
         
 
 

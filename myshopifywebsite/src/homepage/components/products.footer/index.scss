@@ -1,0 +1,27 @@
+.products-footer{
+   .sale-products{
+    max-width: 1200px;
+    margin: 0 auto;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 35px;
+        li{
+            width: 250px;
+            list-style-type: none;
+            display: flex;
+            // column-gap: 30px;
+            img{
+                width: 100px;
+                height: 120px;
+            }
+            .text{
+                margin-top: 20px;
+                .rating{
+                    display: flex;
+                }
+            }
+        }
+    }
+   }
+}
