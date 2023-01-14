@@ -1,0 +1,16 @@
+.about{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 3% 0;
+    .shipping_and_return{
+        display: flex;
+    }
+    .customer_support{
+        display: flex;
+    }
+    .secure_payment{
+        display: flex;
+    }
+}

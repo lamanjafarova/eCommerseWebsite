@@ -1,0 +1,61 @@
+.top_header{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 5;
+    .left{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        border-right: 1px solid #222222;
+        p{
+            color: #555555;
+        }
+        .selectBox{
+            select{
+                width: 50px;
+                border: none;
+                margin: 0 2px;
+                color: #555555;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .right{
+        display: flex;
+        .p_contact{
+            padding: 0 15px;
+            i{
+                color: #555555;
+                padding: 0 5px;
+            }
+            a{
+                text-decoration: none;
+                color: #555555;
+            }
+         }
+         .p_help{
+            padding: 0 15px;
+            i{
+                color: #555555;
+                padding: 0 5px;
+            }
+            a{
+                text-decoration: none;
+                color: #555555;
+            }
+         }
+         .sign_in_register{
+            i{
+                color: #555555;
+                padding-left: 5px;
+            }
+            span{
+                text-decoration: none;
+                color: #555555;
+            }
+         }
+    }
+}

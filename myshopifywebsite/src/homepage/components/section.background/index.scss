@@ -1,0 +1,31 @@
+.main_section{
+    position: relative;
+    height: 350px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin: 3% 0;
+   
+    .background_section_text{
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        button{
+            width: 150px;
+            height: 45px;
+            border: none;
+            font-size: 14px;
+            font-weight: bold;
+            background-color: #0d6efd;
+            color: white;
+            font-weight: bold;
+            margin-left: 20%;
+            margin-top: 5%;
+            &:hover{
+                opacity: 0.8;
+                color: #e1e1e1;
+                cursor: pointer;
+                transition: all 0.5s;
+            }
+            }
+    }
+}

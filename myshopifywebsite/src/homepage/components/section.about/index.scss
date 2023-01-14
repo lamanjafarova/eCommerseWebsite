@@ -1,0 +1,153 @@
+.about_section{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 4% 0;
+    .for_mens{
+        width: 385.33px;
+        height: 223.8px;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        .text_for_mens{
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            h3{
+                color: #e1e1e1;
+                font-size: 30px;
+            }
+            p{
+                color: #e1e1e1;
+                font-size: 14px;
+            }
+            button{
+                color: #e1e1e1;
+                border: none;
+                background-color: transparent;
+                padding: 20px 0;
+                text-transform:uppercase;
+                font-weight: bold;
+                &::after {
+                    display:block;
+                    content: '';
+                    border-bottom: solid 3px #e1e1e1;  
+                    transform: scaleX(0);  
+                    transition: transform 250ms ease-in-out;
+                  }
+                &:hover:after{
+                    transform: scaleX(1);
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .black_friday{
+        width: 385.33px;
+        height: 223.8px;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        .text_black_friday{
+            position: absolute;
+            top: 35%;
+            left: 30%;
+            h5{
+                color: #e1e1e1;
+                font-size: 30px;
+            }
+            h1{
+                color: #e1e1e1;
+                font-size: 14px;
+            }
+            button{
+                color: #2266cc;
+                border: 3px solid #2266cc;
+                background-color: transparent;
+                width: 140px;
+                height: 50px;
+                margin: 5% 10%;
+                text-align: center;
+                font-size: 15px;+
+                &:hover{
+                    cursor: pointer;
+                    background-color: #2266cc;
+                    color: #222222;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+    .fashion{
+        width: 385.33px;
+        height: 223.8px;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+        .text_fashion{
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            h3{
+                color: #e1e1e1;
+                font-size: 30px;
+            }
+            p{
+                color: #e1e1e1;
+                font-size: 14px;
+            }
+            button{
+                color: #e1e1e1;
+                border: none;
+                background-color: transparent;
+                padding: 20px 0;
+                text-transform:uppercase;
+                font-weight: bold;
+                &::after {
+                    display:block;
+                    content: '';
+                    border-bottom: solid 3px #e1e1e1;  
+                    transform: scaleX(0);  
+                    transition: transform 250ms ease-in-out;
+                  }
+                &:hover:after{
+                    transform: scaleX(1);
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}

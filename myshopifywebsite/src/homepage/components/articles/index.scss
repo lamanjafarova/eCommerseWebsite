@@ -1,0 +1,180 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+   .articles{
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0;
+    .new-fashion-style{
+        position: relative;
+        .month{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            background-color: white;
+            width: 50px;
+            height: 40px;
+           p{
+            font-weight: bold;
+            text-align: center;
+            padding: 3%;
+            color: #222222;
+           }
+        }
+        img{
+            width: 350px;
+            height: 210px;
+        }
+        a{
+            text-decoration: none;
+            h2{
+                color: #222222;
+                padding: 3% 0;
+                &:hover{
+                    color: #2266cc;
+                }
+            }
+        }
+        p{
+            color: #222222;
+            padding-bottom: 10px;
+        }
+        button{
+            border: none;
+            color: #2266cc;
+            width: 100px;
+            height: 20px;
+            font-weight: bold;
+            font-size: 13px;
+            text-transform:uppercase;
+            &::after {
+                display:block;
+                content: '';
+                border-bottom: solid 3px #2266cc;  
+                transform: scaleX(0);  
+                transition: transform 250ms ease-in-out;
+              }
+            &:hover:after{
+                transform: scaleX(1);
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+     }
+     .discount-bags-shoes{
+        position: relative;
+        .month2{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            background-color: white;
+            width: 50px;
+            height: 40px;
+           p{
+            font-weight: bold;
+            text-align: center;
+            padding: 3%;
+            color: #222222;
+           }
+        }
+        img{
+            width: 350px;
+            height: 210px;
+        }
+        a{
+            text-decoration: none;
+            h2{
+                color: #222222;
+                padding: 3% 0;
+                &:hover{
+                    color: #2266cc;
+                }
+            }
+        }
+        p{
+            color: #222222;
+            padding-bottom: 10px;
+        }
+        button{
+            border: none;
+            color: #2266cc;
+            width: 100px;
+            height: 20px;
+            font-weight: bold;
+            font-size: 13px;
+            text-transform:uppercase;
+            &::after {
+                display:block;
+                content: '';
+                border-bottom: solid 3px #2266cc;  
+                transform: scaleX(0);  
+                transition: transform 250ms ease-in-out;
+              }
+            &:hover:after{
+                transform: scaleX(1);
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+     }
+     .cyber-week{
+        position: relative;
+        .month3{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            background-color: white;
+            width: 50px;
+            height: 40px;
+           p{
+            font-weight: bold;
+            text-align: center;
+            padding: 3%;
+            color: #222222;
+           }
+        }
+        img{
+            width: 350px;
+            height: 210px;
+        }
+        a{
+            text-decoration: none;
+            h2{
+                color: #222222;
+                padding: 3% 0;
+                &:hover{
+                    color: #2266cc;
+                }
+            }
+        }
+        p{
+            color: #222222;
+            padding-bottom: 10px;
+        }
+        button{
+            border: none;
+            color: #2266cc;
+            width: 100px;
+            height: 20px;
+            font-weight: bold;
+            font-size: 13px;
+            text-transform:uppercase;
+            &::after {
+                display:block;
+                content: '';
+                border-bottom: solid 3px #2266cc;  
+                transform: scaleX(0);  
+                transition: transform 250ms ease-in-out;
+              }
+            &:hover:after{
+                transform: scaleX(1);
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+     }
+   }
+}

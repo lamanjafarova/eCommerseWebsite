@@ -1,0 +1,92 @@
+nav{
+    // position: fixed;
+    z-index: 3;
+    width: 100%;
+    .header{
+        // margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding:30px 0;
+        background-color: #e1e1e1;
+        height: 100%;
+        // position: fixed;
+        // z-index: 2;
+        .logo_header{
+           img{
+            width: 153px;
+            height: 44px;
+           }
+        }
+        .header_input{
+            width: 538.41px;
+            height: 46px;
+            position: relative;
+           .search_input{
+            width: 100%;
+            height: 100%;
+            border: 2px solid #2266cc;
+            border-radius: 3px;
+           }
+           i{
+            position: absolute;
+            top: 30%;
+            right: 3%;
+            font-size: 20px;
+           }
+        }
+        .basket{
+            display: flex;
+            .phone{
+                display: flex;
+                &:hover{
+                    color: #2266cc;
+                    cursor: pointer;
+                }
+                div{
+                    i{
+                        font-size: 28px;
+                        padding: 15px 15px;
+                    }
+                }
+                .phone_help{
+                    padding: 10px 0;
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+            .heart{
+                a{
+                    i{
+                        font-size: 28px;
+                        color: #222222;
+                        padding: 15px 20px;
+                        &:hover{
+                            color: #2266cc;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .shopping_cart{
+                display: flex;
+                &:hover{
+                    color: #2266cc;
+                    cursor: pointer;
+                }
+                .cart_text{
+                    padding: 10px 0;
+                    p{
+                        font-size: 13px;
+                    }
+                }
+                div{
+                    i{
+                        font-size: 28px;
+                        padding: 15px 10px;
+                    }
+                }
+            }
+        }
+    }
+}
