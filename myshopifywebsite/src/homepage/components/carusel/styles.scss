@@ -2,13 +2,60 @@
   position: relative;
   .carusel_text{
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 10%;
     .text_buy_free{
       display: flex;
       p, span{
        font-family: 'Caveat', cursive;
-       font-size: 1.875em;
+       font-size: 40px;
+      }
+      .stars{
+        background-color: #e1e1e1;
+        width: 170px;
+        height: 50px;
+        margin-left: 10px;
+        border: 1px solid solid #eee;
+        border-radius: 3px;
+        span{
+          padding: 0 5px;
+          color: #2266cc;
+          font-family: 'Poppins', sans-serif;
+        }
+        i{
+          color: #2266cc;
+        }
+      }
+    }
+    h1{
+      font-size: 70px;
+      color: #eee;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+    }
+    h3{
+      font-size: 50px;
+      color: #eee;
+      margin-right: 50%;
+      font-family: 'Poppins', sans-serif;
+    }
+    .getFree{
+      color: #eee;
+      margin-right: 16%;
+      margin-top: 2%;
+    }
+    button{
+      width: 200px;
+      height: 50px;
+      background-color: #222222;
+      color: #eee;
+      margin-top: 10%;
+      margin-right: 50%;
+      font-size: 15px;
+      &:hover{
+        cursor: pointer;
+        opacity: 0.8;
+        transition: all 0.5s;
       }
     }
   }
@@ -17,7 +64,41 @@
   position: relative;
   .carusel_text_2{
     position: absolute;
-    top: 30%;
-    right: 5%;
+    top: 20%;
+    right: 3%;
+    .cooming_soon_2{
+      p{
+        font-size: 25px;
+        color: #222222;
+        font-weight: bold;
+      }
+      h3{
+        color: #222222;
+        font-size: 40px;
+      }
+      h1{
+        color: #2266cc;
+        font-size: 90px;
+        font-weight: bold;
+      }
+      .upTo{
+        width: 500px;
+        color: #222222;
+        opacity: 0.7;
+      }
+      button{
+        width: 200px;
+        height: 50px;
+        background-color: #222222;
+        color: #eee;
+        font-size: 15px;
+        margin-top: 10px;
+        &:hover{
+          cursor: pointer;
+          opacity: 0.8;
+          transition: all 0.5s;
+        }
+      }
+    }
   }
 }

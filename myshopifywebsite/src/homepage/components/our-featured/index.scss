@@ -4,5 +4,63 @@
     padding: 3% 0;
     .rating{
         display: flex;
+        margin-left: 10px;
+        i{
+            margin-left: 10px;
+        }
     }
+    .featured-our{
+        display:  inline-block;
+        position: relative;
+            &:hover{
+            .img-top{
+                display: inline;
+                width: 200px;
+                height: 230px;
+                transition: all 0.9s;
+                // transition-timing-function: ease;
+            }
+        }
+           .img-top{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            z-index: 99;
+            &:hover{
+                opacity: 1;
+                transition-duration: 1s;
+            }
+        }
+        .featured-text{
+            padding: 5px 0;
+            p{
+                color: #222222;
+                font-size: 13px;
+                opacity: 0.6;
+            }
+            h3{
+                color: #666666;
+                font-size: 15px;
+            }
+            strong{
+                color: #d26e4b;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        button{
+            width: 200px;
+            height: 40px;
+            background-color: #3883f5;
+            color: #eee;
+            border: none;
+            border-radius: 3px;
+            font-size: 15px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+      }
 }

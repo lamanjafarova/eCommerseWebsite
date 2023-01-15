@@ -4,16 +4,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "./index.scss";
 import { Pagination } from "swiper";
-// import Product1 from "../../../images/product_1.webp"
-// import Product2 from "../../../images/product_2.webp"
-// import Product3 from "../../../images/product_3.webp"
-// import Product4 from "../../../images/product_4.webp"
-// import Product5 from "../../../images/product_5.webp"
-// import Product6 from "../../../images/product_6.webp"
-// import Product7 from "../../../images/product_7.webp"
-// import Product8 from "../../../images/product_8.webp"
 import axios from 'axios';
 import Rating from '../rating';
+import { Link } from 'react-router-dom';
 
 const BestSellers = ({ addBasket, setAddBasket }) => {
   const [sellersData, setSellersData] = useState([])
@@ -57,14 +50,17 @@ const BestSellers = ({ addBasket, setAddBasket }) => {
         {sellersData.map((seller) => {
           return  <>
         <SwiperSlide><div className="sellers">
-        <img src={seller.imgUrlOne} alt="" />
+      <Link  to={`/seller-detail/${seller.id}`}><img src={seller.imgUrlOne} alt="" /></Link>
+      <Link  to={`/seller-detail/${seller.id}`}><img className='img-top' src={seller.imgUrlTwo} alt="" /></Link>
        <div className="seller-div">
         <p>{seller.brend}</p>
         <h3>{seller.name}</h3>
-        <span>€{seller.price}</span> 
+        <strong>€{seller.price}</strong> 
         <Rating rating={seller.rating}/>
         </div> 
-        <button onClick={() => handleAddBasket(seller)}>Add To Cart</button>
+        <button onClick={() => handleAddBasket(seller)}>{!addBasket.find((el) => el.id === seller.id)
+                        ? "Add to Basket"
+                        : "Added Already"}</button>
         </div>
         </SwiperSlide>
           </>

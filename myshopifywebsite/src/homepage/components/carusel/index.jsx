@@ -1,5 +1,6 @@
 import React from 'react'
 // import "../carusel/index.scss"
+// import "./index.scss"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./styles.scss";
@@ -14,13 +15,15 @@ const MainHomeCarusel = () => {
         <div className="carusel_text">
            <div className="text_buy_free">
            <p>Buy 2 Get</p>
+            <div className='stars'>
             <i className="fa-regular fa-star"></i>
             <span>Free</span>
             <i className="fa-regular fa-star"></i>
+            </div>
            </div>
             <h1>Fashionable</h1>
             <h3>Collection</h3>
-            <p>Get Free Shipping on all orders over 99$</p>
+            <p className='getFree'>Get Free Shipping on all orders over 99$</p>
             <button>Shop Now <i className="fa-solid fa-right-long"></i></button>
         </div>
         </div></SwiperSlide>
@@ -29,9 +32,9 @@ const MainHomeCarusel = () => {
         <div className="carusel_text_2">
            <div className="cooming_soon_2">
            <p>COOMING SOON</p>
-           <p>Riode Birthday</p>
+           <h3>Riode Birthday</h3>
            <h1>Sale</h1>
-           <p>Up to 70% off on all products online & Free Shipping over 99$</p>
+           <p className='upTo'>Up to 70% off on all products online & Free Shipping over 99$</p>
            <button>Shop Now <i className="fa-solid fa-right-long"></i></button>
            </div>
         </div>

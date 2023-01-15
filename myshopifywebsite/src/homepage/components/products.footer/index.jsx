@@ -13,12 +13,14 @@ const ProductsFooter = () => {
      <div className="sale-products">
       <ul>
         {productsData.map((element) => {
-          return <li><img src={element.imgUrlOne} alt="" />
+          return <li><div className="product">
+            <img src={element.imgUrlOne} alt="" />
           <div className="text">
             <p>{element.name}</p>
-            <p>{element.price}</p>
+            <strong className='price'>€{element.price}</strong>
             <p><Rating rating={element.rating} /></p>
           </div>  
+          </div>
           </li>
         })}
       </ul>

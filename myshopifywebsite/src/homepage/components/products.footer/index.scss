@@ -1,4 +1,5 @@
 .products-footer{
+    margin-bottom: 10px;
    .sale-products{
     max-width: 1200px;
     margin: 0 auto;
@@ -7,19 +8,32 @@
         flex-wrap: wrap;
         column-gap: 35px;
         li{
-            width: 250px;
             list-style-type: none;
+            .product{
+            width: 250px;
             display: flex;
-            // column-gap: 30px;
             img{
                 width: 100px;
                 height: 120px;
+                transition: 1s;
+                &:hover{
+                    transform: scale(1.1);
+                    cursor: pointer;
+                }
             }
             .text{
-                margin-top: 20px;
+                margin: 20px 10px;
+                p{
+                    color: #222222;
+                    font-family: 'Poppins', sans-serif;
+                }
+                .price{
+                    color: #d26e4b;
+                }
                 .rating{
                     display: flex;
                 }
+            }
             }
         }
     }

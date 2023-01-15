@@ -7,9 +7,9 @@ const SectionBackground = () => {
     <div className='main_section'>
         <img src={BackGroundImg} alt="" />
         <div className="background_section_text">
-            <p>Extra 30 Off Online</p>
-            <h1>SUMMER SEASON SALE</h1>
-            <p>Free shipping on orders over 99$</p>
+            <p className='extra'>Extra 30 Off Online</p>
+            <h1 className='summer'>SUMMER SEASON SALE</h1>
+            <p className='free'>Free shipping on orders over 99$</p>
             <button>Shop Now <i className="fa-solid fa-arrow-right"></i></button>
         </div>
 

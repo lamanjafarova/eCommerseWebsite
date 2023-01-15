@@ -6,11 +6,56 @@
     padding: 3% 0;
     .shipping_and_return{
         display: flex;
+        i{
+            font-size: 30px;
+            padding:0  10px;
+            margin-top: 5px;
+        }
+        .text_shipping_return{
+            h3{
+                color: #333333;
+                font-size: 20px;
+            }
+            p{
+                color: #666666;
+                font-size: 15px;
+            }
+        }
     }
     .customer_support{
         display: flex;
+        i{
+            font-size: 30px;
+            padding:0  10px;
+            margin-top: 5px;
+        }
+        .text_customer_support{
+            h3{
+                color: #333333;
+                font-size: 20px;
+            }
+            p{
+                color: #666666;
+                font-size: 15px;
+            }
+        }
     }
     .secure_payment{
         display: flex;
+        i{
+            font-size: 30px;
+            padding:0  10px;
+            margin-top: 5px;
+        }
+        .text_secure_payment{
+            h3{
+                color: #333333;
+                font-size: 20px;
+            }
+            p{
+                color: #666666;
+                font-size: 15px;
+            }
+        }
     }
 }
