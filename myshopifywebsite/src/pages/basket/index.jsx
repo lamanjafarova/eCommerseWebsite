@@ -1,10 +1,11 @@
 import React from 'react'
 import "./index.scss"
 
-const ShoppingBasket = ({ addBasket, setAddBasket }) => {
+const ShoppingBasket = ({ addBasket, setAddBasket , count , setCount}) => {
   const handleRemove = (id) => {
     let newBasket = addBasket.filter((el) => el.id !== id);
     setAddBasket(newBasket);
+    setCount(count - 1);
   }
   return (
     <div>

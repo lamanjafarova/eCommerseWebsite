@@ -2,8 +2,9 @@ import React from 'react'
 import "../header/index.scss"
 import logoheader from  "../../images/logoheader.svg"
 import { Link, NavLink } from 'react-router-dom'
+import ScrollToTop from 'react-scroll-to-top'
 
-const Header = () => {
+const Header = ({count}) => {
   return (
    <nav>
      <div className='header'>
@@ -34,10 +35,12 @@ const Header = () => {
               <strong>€0,00</strong>
              </div>
              <div><i className="fa-solid fa-bag-shopping"></i></div>
+             <sub>{count}</sub>
           </div>
       </NavLink>
         </div>
         </div>
+        <ScrollToTop smooth />
    </nav>
 
 
