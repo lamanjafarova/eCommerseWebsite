@@ -7,7 +7,7 @@ import "./index.scss"
 import axios from 'axios';
 import Rating from '../rating';
 import { Link } from 'react-router-dom';
-const OurFeatured = ({ addBasket, setAddBasket, count, setCount }) => {
+const OurFeatured = ({ addBasket, setAddBasket }) => {
   const [featuredData, setFeaturedData] = useState([])
   useEffect(() => {
     axios.get("http://localhost:8080/featured")
@@ -16,7 +16,7 @@ const OurFeatured = ({ addBasket, setAddBasket, count, setCount }) => {
   const handleAddBasket = (obj) => {
     if (!addBasket.find((el) => el.id === obj.id)) {
       setAddBasket([...addBasket, obj]);
-      setCount(count + 1);
+      // setCount(count + 1);
     } else {
       alert("This product is already added");
     }

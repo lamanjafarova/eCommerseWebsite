@@ -8,7 +8,7 @@ import axios from 'axios';
 import Rating from '../rating';
 import { Link } from 'react-router-dom';
 
-const BestSellers = ({ addBasket, setAddBasket , count, setCount}) => {
+const BestSellers = ({ addBasket, setAddBasket }) => {
   const [sellersData, setSellersData] = useState([])
   useEffect(() => {
     axios.get("http://localhost:8080/sellers")
@@ -17,7 +17,6 @@ const BestSellers = ({ addBasket, setAddBasket , count, setCount}) => {
   const handleAddBasket = (obj) => {
     if (!addBasket.find((el) => el.id === obj.id)) {
       setAddBasket([...addBasket, obj]);
-      setCount(count + 1);
     } else {
       alert("This product is already added");
     }
@@ -28,9 +27,6 @@ const BestSellers = ({ addBasket, setAddBasket , count, setCount}) => {
   <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        // pagination={{
-        //   clickable: true,
-        // }}
         breakpoints={{
           640: {
             slidesPerView: 2,

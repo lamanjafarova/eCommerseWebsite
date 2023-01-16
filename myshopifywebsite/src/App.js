@@ -12,15 +12,16 @@ import SellerDetail from "./pages/seller-detail";
 
 function App() {
   const [addBasket, setAddBasket] = useState([])
-  const [count, setCount] = useState(0)
+
+  
   return (
     <div className="App">
       <HeaderTop />
-      <Header count={count} />
+      <Header  addBasket={addBasket} setAddBasket={setAddBasket} />
       <Routes>
-        <Route path="/" element={ <HomePageMain addBasket={addBasket} setAddBasket={setAddBasket} count={count} setCount={setCount}/>} />
-        <Route path="/add-basket" element={<ShoppingBasket addBasket={addBasket} setAddBasket={setAddBasket} count={count} setCount={setCount} />} />
-        <Route path="/featured-detail/:id" element={<ProductsDeatil addBasket={addBasket} setAddBasket={setAddBasket} count={count} setCount={setCount}/>}/>
+        <Route path="/" element={ <HomePageMain addBasket={addBasket} setAddBasket={setAddBasket}/>} />
+        <Route path="/add-basket" element={<ShoppingBasket addBasket={addBasket} setAddBasket={setAddBasket}  />} />
+        <Route path="/featured-detail/:id" element={<ProductsDeatil addBasket={addBasket} setAddBasket={setAddBasket}/>}/>
         <Route path="/seller-detail/:id" element={<SellerDetail />}/>
       </Routes>
       <Footer />

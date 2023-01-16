@@ -3,8 +3,17 @@ import "../header/index.scss"
 import logoheader from  "../../images/logoheader.svg"
 import { Link, NavLink } from 'react-router-dom'
 import ScrollToTop from 'react-scroll-to-top'
+import DropDownMenu from '../../homepage/components/dropdown'
+import Offcanvas from '../../homepage/components/offcanvas'
 
-const Header = ({count}) => {
+const Header = ({count, addBasket, setAddBasket }) => {
+  const renderTotal = () => {
+    let total = 0;
+    addBasket.map(element => {
+      total+= +element.price;
+    })
+    return total
+  }
   return (
    <nav>
      <div className='header'>
@@ -28,18 +37,18 @@ const Header = ({count}) => {
           <i className="fa-regular fa-heart"></i>
           </a>
           </div>
-      <NavLink to={"/add-basket"}>
       <div className="shopping_cart">
              <div className='cart_text'>
-             <p>Shopping Cart:</p>
-              <strong>€0,00</strong>
+             {/* <p>Shopping Cart:</p> */}
+              <span>Total: €{renderTotal()}</span>
+             {/* <span>Product:{addBasket.length}</span> */}
              </div>
-             <div><i className="fa-solid fa-bag-shopping"></i></div>
-             <sub>{count}</sub>
+             {/* <span><i className="fa-solid fa-bag-shopping"></i></span> */}
+             <Offcanvas  addBasket={addBasket} setAddBasket={setAddBasket}/>
           </div>
-      </NavLink>
         </div>
         </div>
+        <DropDownMenu />
         <ScrollToTop smooth />
    </nav>
 
