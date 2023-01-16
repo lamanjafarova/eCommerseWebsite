@@ -299,11 +299,10 @@ const DropDownMenu = () => {
             Elements<i className="fa-solid fa-angle-down"></i>
           </a>
         </Dropdown>
+    <Link><span>About Us</span></Link>
      <div className="text">
-     <span>About Us</span>
-        <i className="fa-solid fa-tag"></i>
-        <span>Special Offers</span>
-        <span>Buy Riode</span>
+        <span><i className="fa-solid fa-tag"></i> Special Offers</span>
+        <span>Buy Riode!</span>
      </div>
   </div>
  

@@ -8,6 +8,7 @@ import axios from 'axios';
 import Rating from '../rating';
 import { Link } from 'react-router-dom';
 
+
 const BestSellers = ({ addBasket, setAddBasket }) => {
   const [sellersData, setSellersData] = useState([])
   useEffect(() => {
@@ -18,7 +19,7 @@ const BestSellers = ({ addBasket, setAddBasket }) => {
     if (!addBasket.find((el) => el.id === obj.id)) {
       setAddBasket([...addBasket, obj]);
     } else {
-      alert("This product is already added");
+      window.alert("This product is already added");
     }
   }
   return (
@@ -55,9 +56,10 @@ const BestSellers = ({ addBasket, setAddBasket }) => {
         <strong>€{seller.price}</strong> 
         <Rating rating={seller.rating}/>
         </div> 
-        <button onClick={() => handleAddBasket(seller)}>{!addBasket.find((el) => el.id === seller.id)
+        <button onClick={() => handleAddBasket(seller)}> {!addBasket.find((el) => el.id === seller.id)
                         ? "Add to Basket"
-                        : "Added Already"}</button>
+                        : "Added Already"}
+         </button>
         </div>
         </SwiperSlide>
           </>
